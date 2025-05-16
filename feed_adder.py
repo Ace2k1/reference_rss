@@ -35,7 +35,7 @@ def add_entry_if_not_exists(feed_file, character_name, artist, image_url, entry_
     # Create feed generator and copy existing metadata
     fg = FeedGenerator()
     fg.title(existing_feed.feed.get('title', "Character References RSS"))
-    fg.link(href=existing_feed.feed.get('link', "https://github.com/yourusername/references-rss"), rel="alternate")
+    fg.link(href=existing_feed.feed.get('link', "https://github.com/Ace2k1/reference-rss"), rel="alternate")
     fg.description(existing_feed.feed.get('description', "A feed of character references and artwork."))
     fg.language(existing_feed.feed.get('language', "en"))
 
@@ -65,5 +65,5 @@ add_entry_if_not_exists(
     feed_file="rss.xml",
     character_name="Asuka Langley",
     artist="John Doe",
-    image_url="https://raw.githubusercontent.com/yourusername/references-rss/main/images/asuka.jpg",
+    image_url="https://raw.githubusercontent.com/Ace2k1/reference-rss/main/images/asuka.jpg",
     entry_date=datetime(2025, 5, 16)
